@@ -1,5 +1,5 @@
 # **SubSequencesExtractor**
-This script extracts subsequences of specified length and distance from a given sequence, such as a chromosome. To use this script, you need FASTA files containing the chromosome or sequence of interest. The files must be in FASTA format and named with a ".fasta" extension, such as "2R.fasta". For instance, if you are working with the **Drosophila suzukii** genome downloaded from NCBI ( ), you can generate the FASTA files for each chromosome using the following command:
+This script extracts subsequences of specified length and distance from a given sequence, such as a chromosome. To use this script, you need FASTA files containing the chromosome or sequence of interest. The files must be in FASTA format and named with a ".fasta" extension, such as "2R.fasta". For instance, if you are working with the *Drosophila suzukii* genome downloaded from NCBI ( ), you can generate the FASTA files for each chromosome using the following command:
 
 `awk -F " |," '/^>/ {s=$7".fa"}; {print > s}' GCF_037355615.1_Dsuz_RU_1.0_genomic.fna`
 
