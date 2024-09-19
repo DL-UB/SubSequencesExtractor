@@ -5,7 +5,7 @@ For each extracted subsequence, the header is modified to include the extraction
 Additionally, the SubSequencesExtractor.sh script generates a tab-delimited file containing the coordinates of the genes (or subsequences in this case) required for running dScaff.
 
 ## Dependencies
-You need FASTA files containing the chromosome/sequence of interest to use this script. The files must be in FASTA format and named with a ".fasta" extension, such as "2R.fasta". For instance, if you are working with the *Drosophila suzukii* genome downloaded from NCBI (accession GCF_037355615.1), you can generate the FASTA files for each chromosome using the following command:
+You need FASTA files containing the chromosomes/sequences of interest to use this script. The files must be in FASTA format and named with a ".fasta" extension, such as "2R.fasta". For instance, if you are working with the *Drosophila suzukii* genome downloaded from NCBI (accession GCF_037355615.1), you can generate the FASTA files for each chromosome using the following command:
 
 `awk -F " |," '/^>/ {s=$7".fa"}; {print > s}' GCF_037355615.1_Dsuz_RU_1.0_genomic.fna`
 
