@@ -18,7 +18,7 @@ rm -r seq*.fna *.fai
 
 sed -i 's/ /\t/g' coordinates_${chr%.fasta}.txt
 
-awk -F "\t" -v chrname="${chr%.fasta}" '{ FS = OFS = "\t" } {print "Coord",$0,chrname,"FALSE","plus","det","LOC",no","type","code","code1","no1"}' coordinates_${chr%.fasta}.txt > coord_tab_${chr%.fasta}.csv
+awk -F "\t" -v chrname="${chr%.fasta}" '{ FS = OFS = "\t" } {print "Coord",$0,chrname,"FALSE","plus","det","LOC","no","type","code","code1","no1"}' coordinates_${chr%.fasta}.txt > coord_tab_${chr%.fasta}.csv
 
 rm -r *.txt
 
