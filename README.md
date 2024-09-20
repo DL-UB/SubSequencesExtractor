@@ -1,7 +1,7 @@
 # **SubSequencesExtractor**
 The SubSequencesExtractor.sh script is an auxiliary script for the digital scaffolding strategy, dScaff (https://github.com/DL-UB/dScaff). 
 This script generates a file containing the coordinates of interest based on input values. This file consists of two columns: one for the start coordinates and another for the stop coordinates. The length of the target sequence replaces the final stop coordinate. The utility SeqKit (https://github.com/shenwei356/seqkit) is then employed to extract subsequences from the sequence of interest, using the previously generated coordinates as reference points.
-For each extracted subsequence, the header is modified to include the extraction coordinates and the source file. The subsequences are subsequently concatenated into a single output file, respectively gene.fasta.
+For each extracted subsequence, the header is modified to include the extraction coordinates and the source file. The subsequences are subsequently concatenated into a single output file, respectively ranked_queries.fasta.
 Additionally, the SubSequencesExtractor.sh script generates a tab-delimited file containing the coordinates of the genes (or subsequences in this case) required for running dScaff.
 
 ## Dependencies
