@@ -17,6 +17,6 @@ Before running the SubSequencesExtractor.sh script, ensure that SeqKit is instal
 
 ## Running
 Download the script, make sure that it is executable and run:
-`./script.sh 4000 10000`
+`./SubSequencesExtractor.sh 4000 10000`
 Here, 4000 is the length of the subsequences and 10000 is the distance between each subsequence. For example, the first subsequence will span from coordinates 1 to 4000, the next will span from 14000 to 18000, and so on. 
 The last coordinate will be the length of the sequence, even if the extracted subsequence will not be 4000 nucleotides. The last subsequence may be longer if the total length of the sequence is not an exact multiple of 4000.
